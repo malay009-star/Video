@@ -1,0 +1,84 @@
+.video_section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    // background-color: red;
+    margin: auto;
+    .video-wrapper {
+        width: 100%;
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+    }
+    video {
+        position: absolute;
+        width: 100%;
+        opacity: 0.3;
+    }
+}
+
+#video_info {
+    top: 30%;
+    left: 35%;
+    position: absolute;
+    // background-color: red;
+    h1 {
+        font-size: 4rem;
+    }
+    button {
+        padding: 7px 36px;
+        color: #6abbf5;
+        font-size: 1.1rem;
+        border: 2px solid #6abbf5;
+    }
+    button:hover {
+        transition: all 0.5s ease;
+        color: black;
+    }
+}
+
+@include sm-tablet {
+    #video_info {
+        top: 15%;
+        left: 18%;
+        position: absolute;
+        // background-color: red;   
+        h1 {
+            font-size: 3.7rem;
+        }
+    }
+}
+
+@include mobile {
+    #video_info {
+        top: 10%;
+        left: 10%;
+        h1 {
+            font-size: 3rem;
+        }
+        #btn_box {
+            margin-left: 2.1rem;
+        }
+        button {
+            font-size: 16px;
+            padding: 5px 30px;
+        }
+    }
+}
+
+@include sm-mobile {
+    #video_info {
+        top: 10%;
+        left: 8%;
+        h1 {
+            font-size: 2.8rem;
+        }
+        #btn_box {
+            margin-left: 2.5rem;
+        }
+        button {
+            font-size: 14px;
+            padding: 5px 25px;
+        }
+    }
+}
